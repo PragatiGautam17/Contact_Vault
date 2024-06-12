@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <servlet>
+    <servlet-name>InsertintoVerified</servlet-name>
+    <jsp-file>/InsertintoVerified.jsp</jsp-file>
+    <multipart-config>
+        <location>/tmp</location>
+        <max-file-size>20848820</max-file-size>
+        <max-request-size>418018841</max-request-size>
+        <file-size-threshold>1048576</file-size-threshold>
+    </multipart-config>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>InsertintoVerified</servlet-name>
+    <url-pattern>/InsertintoVerified.jsp</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Fileverify</servlet-name>
+    <jsp-file>/Fileverify.jsp</jsp-file>
+    <multipart-config>
+        <location>/tmp</location>
+        <max-file-size>20848820</max-file-size>
+        <max-request-size>418018841</max-request-size>
+        <file-size-threshold>1048576</file-size-threshold>
+    </multipart-config>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Fileverify</servlet-name>
+    <url-pattern>/Fileverify.jsp</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>SearchOnline</servlet-name>
+    <jsp-file>/SearchOnline.jsp</jsp-file>
+    <multipart-config>
+        <location>/tmp</location>
+        <max-file-size>20848820</max-file-size>
+        <max-request-size>418018841</max-request-size>
+        <file-size-threshold>1048576</file-size-threshold>
+    </multipart-config>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SearchOnline</servlet-name>
+    <url-pattern>/SearchOnline.jsp</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SearchByCategory</servlet-name>
+    <jsp-file>/SearchByCategory.jsp</jsp-file>
+    <multipart-config>
+        <location>/tmp</location>
+        <max-file-size>20848820</max-file-size>
+        <max-request-size>418018841</max-request-size>
+        <file-size-threshold>1048576</file-size-threshold>
+    </multipart-config>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SearchByCategory</servlet-name>
+    <url-pattern>/SearchByCategory.jsp</url-pattern>
+</servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+</web-app>
